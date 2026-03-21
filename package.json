@@ -1,0 +1,13 @@
+{
+  "name": "indrajeet-portfolio",
+  "version": "1.0.0",
+  "description": "Indrajeet Yadav - MIS Executive & Data Analyst Portfolio",
+  "scripts": {
+    "build": "cd server && npm install && cd ../client && npm install && npm run build",
+    "start": "node server/server.js",
+    "dev": "concurrently \"node server/server.js\" \"cd client && npm run dev\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
